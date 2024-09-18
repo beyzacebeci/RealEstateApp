@@ -1,0 +1,49 @@
+2024-08-26 14:52:03.636 +03:00 [INF] User profile is available. Using 'C:\Users\bcebe\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-26 14:52:03.887 +03:00 [INF] Now listening on: https://localhost:7145
+2024-08-26 14:52:03.889 +03:00 [INF] Now listening on: http://localhost:5176
+2024-08-26 14:52:03.891 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-26 14:52:03.892 +03:00 [INF] Hosting environment: Development
+2024-08-26 14:52:03.893 +03:00 [INF] Content root path: C:\MyWorkSpace\OBSS\beyza.cebeci\FinalProject\RealEstateApp.Api\RealEstateApp
+2024-08-26 14:52:05.019 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - null null
+2024-08-26 14:52:05.299 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - 200 null text/html;charset=utf-8 284.766ms
+2024-08-26 14:52:06.777 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - null null
+2024-08-26 14:52:06.777 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-26 14:52:06.797 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 19.4194ms
+2024-08-26 14:52:06.828 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.5833ms
+2024-08-26 14:52:06.892 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - null null
+2024-08-26 14:52:07.015 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 123.3484ms
+2024-08-26 14:56:25.125 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/api/estates/all - null null
+2024-08-26 14:56:25.137 +03:00 [INF] Handling request: GET /api/estates/all
+2024-08-26 14:56:25.231 +03:00 [INF] Executing endpoint 'RealEstateApp.Controllers.EstatesController.GetAllEstates (RealEstateApp)'
+2024-08-26 14:56:25.246 +03:00 [INF] Route matched with {action = "GetAllEstates", controller = "Estates"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEstates() on controller RealEstateApp.Controllers.EstatesController (RealEstateApp).
+2024-08-26 14:56:27.974 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[City], [e].[District], [e].[EndDate], [e].[EstateStatusId], [e].[EstateTypeId], [e].[IsDeleted], [e].[PriceId], [e].[StartDate], [e].[Title], [e].[UserId], [e0].[Id], [e0].[IsDeleted], [e0].[Status], [e1].[Id], [e1].[IsDeleted], [e1].[Name], [p].[Id], [p].[Amount], [p].[CurrencyId], [p].[IsDeleted], [c].[Id], [c].[Code], [c].[CurrencyName], [c].[IsDeleted]
+FROM [Estates] AS [e]
+INNER JOIN [EstateStatuses] AS [e0] ON [e].[EstateStatusId] = [e0].[Id]
+INNER JOIN [EstateTypes] AS [e1] ON [e].[EstateTypeId] = [e1].[Id]
+INNER JOIN [Prices] AS [p] ON [e].[PriceId] = [p].[Id]
+INNER JOIN [Currencies] AS [c] ON [p].[CurrencyId] = [c].[Id]
+WHERE [e].[IsDeleted] = CAST(0 AS bit)
+2024-08-26 14:56:28.032 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.Estates.ReadEstateDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-26 14:56:28.060 +03:00 [INF] Executed action RealEstateApp.Controllers.EstatesController.GetAllEstates (RealEstateApp) in 2808.1393ms
+2024-08-26 14:56:28.063 +03:00 [INF] Executed endpoint 'RealEstateApp.Controllers.EstatesController.GetAllEstates (RealEstateApp)'
+2024-08-26 14:56:28.065 +03:00 [INF] Finished handling request. Response status code: 200. Elapsed time: 2928ms
+2024-08-26 14:56:28.074 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/api/estates/all - 200 null application/json; charset=utf-8 2949.9913ms
+2024-08-26 15:02:35.536 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/api/estates/types/counts - null null
+2024-08-26 15:02:35.550 +03:00 [INF] Handling request: GET /api/estates/types/counts
+2024-08-26 15:02:35.553 +03:00 [INF] Executing endpoint 'RealEstateApp.Controllers.EstatesController.GetEstateCountByType (RealEstateApp)'
+2024-08-26 15:02:35.557 +03:00 [INF] Route matched with {action = "GetEstateCountByType", controller = "Estates"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEstateCountByType() on controller RealEstateApp.Controllers.EstatesController (RealEstateApp).
+2024-08-26 15:02:35.612 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[IsDeleted], [e].[Name]
+FROM [EstateTypes] AS [e]
+WHERE [e].[IsDeleted] = CAST(0 AS bit)
+2024-08-26 15:02:35.657 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EstateTypeId], COUNT(*) AS [Count]
+FROM [Estates] AS [e]
+WHERE [e].[IsDeleted] = CAST(0 AS bit)
+GROUP BY [e].[EstateTypeId]
+2024-08-26 15:02:35.662 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Entities.Models.EstateType, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entities.DataTransferObjects.Estates.EstateTypeCountDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-26 15:02:35.665 +03:00 [INF] Executed action RealEstateApp.Controllers.EstatesController.GetEstateCountByType (RealEstateApp) in 106.1307ms
+2024-08-26 15:02:35.668 +03:00 [INF] Executed endpoint 'RealEstateApp.Controllers.EstatesController.GetEstateCountByType (RealEstateApp)'
+2024-08-26 15:02:35.669 +03:00 [INF] Finished handling request. Response status code: 200. Elapsed time: 118ms
+2024-08-26 15:02:35.670 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/api/estates/types/counts - 200 null application/json; charset=utf-8 134.1743ms

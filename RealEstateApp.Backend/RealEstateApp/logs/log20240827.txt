@@ -1,0 +1,46 @@
+2024-08-27 12:51:50.290 +03:00 [INF] User profile is available. Using 'C:\Users\bcebe\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-27 12:51:51.452 +03:00 [INF] Now listening on: https://localhost:7145
+2024-08-27 12:51:51.454 +03:00 [INF] Now listening on: http://localhost:5176
+2024-08-27 12:51:51.458 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-27 12:51:51.459 +03:00 [INF] Hosting environment: Development
+2024-08-27 12:51:51.461 +03:00 [INF] Content root path: C:\MyWorkSpace\OBSS\beyza.cebeci\FinalProject\RealEstateApp.Api\RealEstateApp
+2024-08-27 12:51:57.719 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - null null
+2024-08-27 12:51:58.217 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - 200 null text/html;charset=utf-8 507.5884ms
+2024-08-27 12:51:58.246 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-27 12:51:58.248 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - null null
+2024-08-27 12:51:58.262 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 16.7783ms
+2024-08-27 12:51:58.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 279.8668ms
+2024-08-27 12:51:58.622 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - null null
+2024-08-27 12:51:58.849 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 227.2002ms
+2024-08-27 12:52:23.126 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/index.html/metrics - null null
+2024-08-27 12:52:23.149 +03:00 [INF] Handling request: GET /swagger/index.html/metrics
+2024-08-27 12:52:23.282 +03:00 [INF] Finished handling request. Response status code: 404. Elapsed time: 133ms
+2024-08-27 12:52:23.291 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/index.html/metrics - 404 0 null 167.1488ms
+2024-08-27 12:52:23.301 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7145/swagger/index.html/metrics, Response status code: 404
+2024-08-27 12:52:25.735 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-27 12:52:25.746 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 14.0718ms
+2024-08-27 12:52:29.146 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/api/currencies - null null
+2024-08-27 12:52:29.158 +03:00 [INF] Handling request: GET /api/currencies
+2024-08-27 12:52:29.174 +03:00 [INF] Executing endpoint 'RealEstateApp.Controllers.CurrenciesController.GetAllCurrencies (RealEstateApp)'
+2024-08-27 12:52:29.222 +03:00 [INF] Route matched with {action = "GetAllCurrencies", controller = "Currencies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCurrencies() on controller RealEstateApp.Controllers.CurrenciesController (RealEstateApp).
+2024-08-27 12:52:33.038 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Code], [c].[CurrencyName], [c].[IsDeleted]
+FROM [Currencies] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit)
+2024-08-27 12:52:33.102 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.Currencies.ReadCurrencyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-27 12:52:33.121 +03:00 [INF] Executed action RealEstateApp.Controllers.CurrenciesController.GetAllCurrencies (RealEstateApp) in 3885.5748ms
+2024-08-27 12:52:33.126 +03:00 [INF] Executed endpoint 'RealEstateApp.Controllers.CurrenciesController.GetAllCurrencies (RealEstateApp)'
+2024-08-27 12:52:33.130 +03:00 [INF] Finished handling request. Response status code: 200. Elapsed time: 3972ms
+2024-08-27 12:52:33.148 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/api/currencies - 200 null application/json; charset=utf-8 4002.8441ms
+2024-08-27 12:52:41.243 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/api/metrics - null null
+2024-08-27 12:52:41.257 +03:00 [INF] Handling request: GET /api/metrics
+2024-08-27 12:52:41.265 +03:00 [INF] Finished handling request. Response status code: 404. Elapsed time: 8ms
+2024-08-27 12:52:41.272 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/api/metrics - 404 0 null 28.5884ms
+2024-08-27 12:52:41.279 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7145/api/metrics, Response status code: 404
+2024-08-27 12:53:28.136 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/metrics - null null
+2024-08-27 12:53:28.315 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/metrics - 200 null text/plain; version=0.0.4; charset=utf-8 179.2249ms
+2024-08-27 12:53:28.394 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7145/favicon.ico - null null
+2024-08-27 12:53:28.400 +03:00 [INF] Handling request: GET /favicon.ico
+2024-08-27 12:53:28.402 +03:00 [INF] Finished handling request. Response status code: 404. Elapsed time: 2ms
+2024-08-27 12:53:28.405 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7145/favicon.ico - 404 0 null 44.5624ms
+2024-08-27 12:53:28.415 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7145/favicon.ico, Response status code: 404

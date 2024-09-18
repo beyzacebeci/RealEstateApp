@@ -1,0 +1,30 @@
+/* #c345fd
+#2fc5ff
+#04f6cd */
+.mainCardContainer{
+    display: flex;
+    padding: 20px;
+}
+.cardContainer{
+    height: 180px;
+    width: 240px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left:5px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caredName{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+.cardValue{
+    font-size: 20px;
+    font-weight: 600;
+}

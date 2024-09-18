@@ -1,0 +1,55 @@
+{
+    "signIn":"Giriş Yap",
+    "signUp":"Kaydol",
+    "firstName":"Ad",
+    "lastName":"Soyad",
+    "userName":"Kullanıcı Adı",
+    "password":"Şifre",
+    "navigateSignInMessage":"Zaten bir hesabınız var mı? Giriş Yap",
+    "navigateSignUpMessage":"Hesabınız yok mu? Kaydol",
+    "home":"Anasayfa",
+    "gotoDetail":"Detaya Git",
+    "price":"Fiyat",
+    "status":"Emlak Durumu",
+    "type":"Emlak Tipi",
+    "estateStartDate":"Başlangıç Tarihi",
+    "estateEndDate":"Bitiş Tarihi",
+    "edit":"Düzenle",
+    "delete":"Sil",
+    "save":"Kaydet",
+    "title":"İlan Başlığı",
+    "description":"Açıklama",
+    "category":"Kategoriler",
+    "currencyCode" :"Para Birimleri",
+    "uploadImages":"Fotoğraf Yükle",
+    "currencyName":"Para Birimi Adı",
+    "code":"Para Birimi Kodu",
+    "update":"Güncelle",
+    "Operation successful!":"Başarı ile oluşturuldu!",
+    "noestatesfound":"Hiç ilan bulunamadı.",
+    
+    "userCreatedSuccessfully":"Kullanıcı başarı ile oluşturuldu.",
+    "allFieldsRequired":"Lütfen tüm alanları doldurunuz.",
+    "loginSuccess":"Giriş Başarılı!",
+    "userNamePasswordError":"Kullanıcı adı ya da şifre hatalı",
+    "Photodeletedsuccessfully":"Fotoğraf silme işlemi başarılı!",
+    "Erroroccurredwhiledeletingphoto":"Fotoğraf silinemedi. Tekrar deneyiniz.",
+     "RequiredFileField":"Lütfen bir dosya seçiniz.",
+     "areYouSureDelete":"İlanı silmek istediğinize emin misiniz?",
+     "confirmDelete":"Silmeyi Onayla",
+     "confirm":"Onayla",
+     "cancel":"Vazgeç",
+     "updateSuccessMessage":"Güncelleme Başarılı",
+     "city":"Şehir",
+     "district":"İlçe",
+     "gotoEstateMap":"Haritada Görüntüle",
+     "userRealEstatesNavbar":"İlanlarım",
+     "addnewEstate":"Yeni İlan Ekle",
+
+
+    "totalEstate":"Toplam Emlak"
+
+
+
+
+  }

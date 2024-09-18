@@ -1,0 +1,7 @@
+.estate-container {
+    /* padding: 60px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;/* Fazla kartları alt satıra geçirecek */
+; /* Kartları ortalar */
+}

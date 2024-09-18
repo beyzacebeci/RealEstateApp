@@ -1,0 +1,55 @@
+{
+    "signIn":"Sign In",
+    "signUp":"Sign Up",
+    "firstName":"First Name",
+    "lastName":"Last Name",
+    "userName":"User Name",
+    "password":"Password",
+    "navigateSignInMessage":"Already have an account? Sign In",
+    "navigateSignUpMessage":"Don't have an account? Sign Up",
+    "home":"Home",
+    "gotoDetail":"Go to Detail",
+    "price":"Price",
+    "status":"Estate Status",
+    "type":"Estate Type",
+    "estateStartDate":"Start Date",
+    "estateEndDate":"End Date",
+    "edit":"Edit",
+    "delete":"Delete",
+    "save":"Save",
+    "title":"Estate Title",
+    "description":"Description",
+    "category":"Categories",
+    "currencyCode" :"Currency Codes",
+    "uploadImages":"Upload Images",
+    "currencyName":"Currency Name",
+    "code":"Currency Code",
+    "update":"Update",
+    "Operation successful!":"Operation successful!",
+    "noestatesfound":"No Estates Found",
+
+    
+    "userCreatedSuccessfully":"User Created Succesfully.",
+    "allFieldsRequired":"All Fields Required",
+    "loginSuccess":"Login Success!",
+    "userNamePasswordError":"Username or Pasword is incorrect.",
+    "Photodeletedsuccessfully":"Photo deleted successfully!",
+    "Erroroccurredwhiledeletingphoto":"Error occured while deleting photo, Try Again.",
+    "RequiredFileField":"Please choose a file.",
+    "areYouSureDelete":"Are you sure delete?",
+    "confirmDelete":"Confirm Delete",
+    "confirm":"Confirm",
+    "cancel":"Cancel",
+    "updateSuccessMessage":"Update successful",
+    "city":"City",
+    "district":"District",
+    "gotoEstateMap":"Go to estate map",
+    "userRealEstatesNavbar":"My Estates",
+    "addnewEstate":"Add New Estate",
+
+
+    "totalEstate":"Total Estate"
+
+
+
+  }
